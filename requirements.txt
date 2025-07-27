@@ -1,1 +1,2 @@
+azure-mgmt-compute==35.0.0
 discord.py==2.5.2
