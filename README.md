@@ -23,4 +23,26 @@ python main.py
 
 ### deployment
 
+docker desktop: [link](https://www.docker.com/products/docker-desktop/)
+
+```
+docker build -t amsc-v2 .
+
+# Test locally
+docker run --env-file .env amsc-v2
+
+# Login
+az acr login --name azuremcservercontroller
+
+# Tag
+docker tag amsc-v2 azuremcservercontroller-d5cgbxhtceahd0f8.azurecr.io/amsc-v2:v1
+
+# Push to ACR
+docker push azuremcservercontroller-d5cgbxhtceahd0f8.azurecr.io/amsc-v2:v1
+
+# Deploy to Azure Container Instance
 TODO
+```
+
+
+
