@@ -32,7 +32,7 @@ docker build -t amsc-v2 .
 docker run --env-file .env amsc-v2
 
 # Login
-az act login --name azuremcservercontroller
+az acr login --name azuremcservercontroller
 
 # Tag
 docker tag amsc-v2 azuremcservercontroller-d5cgbxhtceahd0f8.azurecr.io/amsc-v2:v1
