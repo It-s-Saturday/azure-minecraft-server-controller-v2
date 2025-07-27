@@ -3,8 +3,10 @@ import traceback
 
 import discord
 from discord.ext import commands
+from dotenv import load_dotenv
 
 def read_token_from_env():
+    load_dotenv()
     token_from_env = os.getenv('AMSC_BOT_TOKEN')
     if not token_from_env:
         raise Exception('Token not found in environment variables')
