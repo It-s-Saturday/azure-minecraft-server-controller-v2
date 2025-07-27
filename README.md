@@ -5,7 +5,7 @@ A discord bot to allow friends to start and stop Azure resources hosting a Minec
 
 ### local development
 
-python: (link)[https://www.python.org/downloads/]
+python: [link](https://www.python.org/downloads/])
 
 ```
 git clone <this_repo_url>
